@@ -8,7 +8,7 @@ def binary_Search(arr,low,high,key):
 
     if low >high :
         return "The element doesn't exist." 
-    mid =low+((high-low)//2)
+    mid = low + ((high - low) // 2)
     if arr[mid] == key:
         return f"The element is found at index position {mid} after sorting."
     elif arr[mid] <key:
