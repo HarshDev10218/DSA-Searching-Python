@@ -7,7 +7,7 @@ def exploration_Search(arr,key):
     '''
     n = len(arr)
     if arr[0] == key:
-        return f"The element is found at inder position 0."
+        return f"The element is found at index position 0."
     i = 1
     while i<n and arr[i]<key:
         i = i*2
@@ -26,7 +26,7 @@ def binary_Search(arr,low,high,key):
 
     if low >high :
         return "The element doesn't exist." 
-    mid = ((low-high)//2)+high
+    mid = low + ((high - low) // 2)
     if arr[mid] == key:
         return f"The element is found at index position {mid} after sorting."
     elif arr[mid] <key:
